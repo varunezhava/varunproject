@@ -25,8 +25,8 @@
     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
     <groupId>org.apache.poi</groupId>
-    <artifactId>poi</artifactId>
-    <version>3.17</version>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.11</version>
 </dependency>
     
   </dependencies>
