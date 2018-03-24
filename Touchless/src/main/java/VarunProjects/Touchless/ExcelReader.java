@@ -45,5 +45,12 @@ public class ExcelReader {
 					
 	}
 	
+	public int GetTotalRows(Sheet worksheet)
+	{
+		int n = worksheet.getLastRowNum();
+		
+		return n;
+	}
+	
 
 }
