@@ -2,8 +2,9 @@ package VarunProjects.Touchless;
 
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
@@ -22,9 +23,11 @@ public class Master
     	book = reader.GetWorkbook(filepath);
     	Sheet sheet = reader.GetSheet(book, "Sheet1");
     	int x = reader.GetTotalRows(sheet);
-    
-    	
-    	
+    	int n = 5;
+    	String data[][] = new String[x][n];
+    	data = reader.DataCollector(sheet, x, n);
+ 
+ 
     	
     	
         
